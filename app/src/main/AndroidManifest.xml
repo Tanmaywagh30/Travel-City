@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codecenter1430gmail.travelcityfinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TravelCity"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ImageScaler" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".FullView" />
+        <activity android:name=".RecyclerViewAdapter" />
+        <activity android:name=".RecyclerViewAdapter2" />
+        <activity android:name=".RecyclerViewAdapter3" />
+        <activity android:name=".RecyclerViewAdapter4" />
+        <activity android:name=".RecyclerViewAdapter5" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Locationsetter" />
+        <activity android:name=".InfoSetter" />
+        <activity android:name=".RecyclerViewAdapter_Final" />
+        <activity android:name=".SpecialInfoSetter"></activity>
+    </application>
+
+</manifest>

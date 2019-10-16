@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="12dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/full_list_cardview"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="4dp"
+        android:layout_height="220dp"
+        app:cardElevation="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_data"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
+                android:layout_height="170dp"
+                android:src="@drawable/punefinal"
+                ></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@id/image_data"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/image_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/heading_data"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#000000"
+                    android:text="Heading Data"
+                    android:gravity="left|center"
+                    />
+
+                <TextView
+                    android:id="@+id/special_info"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/image_data"
+                    android:gravity="right|center"
+                    android:textSize="12dp"
+                    android:text="Special Info"
+                    android:fontFamily="serif"
+                    android:textColor="#000000"
+
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
